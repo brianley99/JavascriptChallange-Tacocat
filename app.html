@@ -57,7 +57,30 @@
     <!--Main Section-->
     <main class="flex-shrink-0">
         <div class="container">
-
+            <div class="row row-cols-1 row-cols-lg-2 pt-3">
+                <div class="col">
+                    <h2>Taco Cat: A Coding Project</h2>
+                    <p>Taco cat is a palindrome. A Palindrome is a word, phrase, or sequence that reads the same backward as foward. Write a program that checks if the phrase entered is a palindrome.</p>
+                </div>
+                <div class="col">
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <h5>Enter a phrase or word to check</h5>
+                            <div class="mb-3">
+                              <input type="text" class="form-control" id="userString" aria-describedby="Enter a String" placeholder="Enter A String" value="">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button id="btnSubmit" type="button" class="btn btn-primary">Check It</button>
+                        </div>
+                        <div class="col mt-5 pt-3 rounded bg-secondary">
+                            <!--Answer Goes Here-->
+                            <h3 id="alertHeader">Title</h3>
+                            <p id="msg">Message</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -91,6 +114,10 @@
 
     <!--JavaScript-->
     <script src="./js/site.js"></script>
+
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getValue);
+    </script>
 
 </body>
 
