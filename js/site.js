@@ -1,5 +1,10 @@
 //get out user input
 function getValue() {
+
+    //turn result page invisible
+    document.getElementById('results-div').classList.add("invisible");
+
+
     //get user string from the page
     let userString = document.getElementById('userString').value;
 
@@ -14,7 +19,7 @@ function getValue() {
 //check if string is a palindrome
 function checkForPalindrome(userString) {
     
-    userString = userString.lowerCase();
+    userString = userString.toLowerCase();
 
     //remove spaces and special characters
     let regx = /[^a-z0-9]/gi;
@@ -44,5 +49,8 @@ function displayMessage(returnObj) {
 
     document.getElementById("alertHeader").innerHTML = returnObj.msg;
     document.getElementById("msg").innerHTML = `Your phrase reversed is: ${returnObj.reversed}`;
+
+    //turn result div visible
+    document.getElementById('results-div').classList.remove("invisible");
 
 }

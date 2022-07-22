@@ -90,3 +90,8 @@ main>.container {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.bg-tacocat {
+    background: rgb(255,137,6);
+    background: linear-gradient(45deg, rgba(255,137,6,1) 0%, rgba(242,95,76,1) 80%, rgba(229,49,112,1) 100%);
+}
